@@ -1,0 +1,5 @@
+# Node modules
+node_modules/
+
+# .env that stores api keys :)
+.env
