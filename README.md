@@ -35,7 +35,7 @@ Installing:
 2. Place my program there:
 ```
 For command line:
-git clone https://github.com/TealGlow/WikiWebScraper.git
+git clone https://github.com/TealGlow/CS361-Wikipedia-web-scraper-service.git
 ```
 3. Open a terminal in the location of the app.js file:
 
