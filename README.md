@@ -29,6 +29,7 @@ Note this is the public version of this git repo.
 requirements:
 - [npm](https://www.npmjs.com/)
 - [Node.js](https://nodejs.org/en/download/)
+- [Zip code validator service](https://github.com/cjpdx-dev/geoJSON-imager)
 
 Installing:
 1. Go to the directory that you wish to place this program
