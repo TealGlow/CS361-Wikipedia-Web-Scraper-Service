@@ -59,6 +59,7 @@ If it is running correctly it should output in the command line that it is runni
 
 ## How to Use:
 Make sure that the app.js file is running, you can change the port.
+Run the geojson imager flask app.
 Make a GET request to the http:localhost:3000/location path.  Currently does not support POST requests.
 
 Please note: this is using Chris's zip code validator, so that needs to be running at the same time.
