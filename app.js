@@ -24,9 +24,7 @@ app.get("/", function(req, res){
 
 
 
-// Handler for a GET request
 app.get("/location", function(req, res){
-  // handles the get request for the location
   // So, in order to scrape the wiki page, we need to convert the zip code to
   // "town_name, state"
 
@@ -61,9 +59,7 @@ app.get("/location", function(req, res){
       const req_wiki = axios.get(wiki_url);
       const weather_5_day_request = axios.get(weather_5_url);
 
-      // on all the Promises.  These promises are in an aarray
       // this is from the javascript documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
-      // axios will return a promise and then when we get them all we must wait for them to send the JSON object.
       Promise.all([weather_current_request, req_wiki, weather_5_day_request])
       .then((response)=>{
         // all our promises came through.
