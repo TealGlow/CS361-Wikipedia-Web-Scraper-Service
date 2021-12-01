@@ -76,7 +76,6 @@ app.get("/location", function(req, res){
         res.json(Object_To_Send);
       })
       .catch(()=>{
-        // error with any of the promises, we need to handle that
         console.error("Error getting the data for this location");
         res.status(400).json(errObj);
       });
@@ -103,7 +102,6 @@ app.get("/location", function(req, res){
 
 function findWikiSection(rawData){
   //function that finds the wikipedia data sections and cleans it
-  //console.log(rawData);
   var soup = new JSSoup(rawData);
   var resultArr = [];
   paragraphs = soup.findAll('p');
@@ -116,7 +114,6 @@ function findWikiSection(rawData){
       resultArr.push(temp);
     }
   }
-  // add the results as an array
   var merged = resultArr.toString();
   // clean more of the output
 
